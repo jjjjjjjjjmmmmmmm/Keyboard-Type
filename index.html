@@ -213,7 +213,7 @@
     if (!document.body.hasAttribute('tabindex')) document.body.setAttribute('tabindex', '0');
     window.addEventListener('load', () => document.body.focus());
     
-    // ---- Key-code normalizer ----
+    
     function codeToKey(code) {
       // Letters: KeyA → "a"
       if (/^Key[A-Z]$/.test(code)) return code.slice(3).toLowerCase();
@@ -311,7 +311,7 @@
     padding: 10px 16px;
     cursor: pointer;
   ">
-    <span style="font-size: 16px; font-weight: 600;">Instructions</span>
+    <span style="font-size: 16px; font-weight: 600;">Instructions/Hidden Keys</span>
     <span id="chevron" style="
       display: inline-block;
       transition: transform 0.3s ease;
